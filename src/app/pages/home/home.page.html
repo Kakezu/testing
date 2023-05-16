@@ -1,0 +1,72 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>GYM HOME PAGE</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+ <!-- header + side menu alkaa tästä -->
+ <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="end" >
+      <img src="assets\icon\gymlogo_small.png" id="toolbarLogoSmall">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<!-- header + side menu loppuu tähän -->
+
+<ion-content>
+  <div class="title-div">
+    <ion-card
+      class="title-card"
+      style="background-image: url('../../assets/images/home.png')"
+    >
+      <ion-card-header>
+        <ion-card-title> Hello!</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>New Instructed Classes</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img
+        alt="Row of dumbbells"
+        src="../../assets/images/home-new-classes.png"
+      />
+      Check out our diverse selection of instructed classes!
+      <ion-button type="button" expand="block" (click)="goToClasses()"
+        >BOOK A CLASS</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Childcare Services </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img
+        alt="Row of dumbbells"
+        src="../../assets/images/home-childcare-services.png"
+      />
+      Need a child while you’re going to gym? No problem! We have a playful room
+      with a certified nurse to oversee the children.
+      <ion-button type="button" expand="block" (click)="goToAmenities()"
+        >READ MORE</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>
